@@ -79,7 +79,7 @@ int main(){
 
     // Main Thread waits for these threads to finish
 
-    for (int i = 0;i<3;i++){
+    for (int i = 0;i<5;i++){
         pthread_join(threads[i], NULL);
     }
 
