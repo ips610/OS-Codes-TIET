@@ -17,6 +17,7 @@ void* Deposit(void* arg){
     int k;
 
     k = rand() % (10);
+    printf("K is %d: ", k);
     printf("Enter amount to deposit: ");
     scanf("%d", &amount);
     pthread_mutex_lock(&lock);
@@ -38,6 +39,7 @@ void* Withdraw(void* arg){
     int k;
 
     k=rand() % (10);
+    printf("K is %d: ", k);
 
     printf("Enter amount to withdraw: ");
     scanf("%d", &amount);
